@@ -1,0 +1,78 @@
+html{
+
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,hsl(214,47%,15%),hsl(237, 49%, 15%));
+    height: 100vh;
+}
+
+header{
+    width: 80%;
+    height: 10vh;
+    margin:1rem auto;
+    padding: 1rem;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    font-size: medium;
+}
+
+h2{
+    color: hsl(229, 64%, 46%);
+}
+
+.contenedor-score{
+    padding: 0 .8rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#puntuacion{
+    font-size: xx-large;
+}
+
+main{
+    width: 100%;
+    height: 45vh;
+}
+
+.contenedor-botones{
+    width: 50%;
+    margin: 0 auto;
+    height: 80%;
+    background-image:url("assets/bg-triangle.svg") ;
+    background-repeat: no-repeat;
+    background-position: center ;
+    position: relative;
+}
+.contenedor-botones div{
+    height: 30%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#piedra{
+    background-image: url("assets/icon-rock.svg");
+    border: 10px hsl(349, 71%, 52%) solid;
+}
+#papel{
+    right: 0;
+    border: 10px hsl(230, 89%, 62%) solid;
+    background-image: url("assets/icon-paper.svg");
+}
+#tijera{
+    bottom: 0;
+    left: 28%;
+    border: 10px hsl(39, 89%, 49%) solid;
+    background-image: url("assets/icon-scissors.svg");
+}
