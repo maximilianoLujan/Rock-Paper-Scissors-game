@@ -9,14 +9,18 @@
     <title>Rock,Paper,Scissors</title>
 </head>
 <body>
+    <div class="contenedor-rules">
+        <img id="rules" src="assets/image-rules.svg" alt="rules">
+    </div>
     <header>
         <img src="assets/logo.svg" alt="">
         <div class="contenedor-score">
             <h2>Score</h2>
-            <h3 id="puntuacion">13</h3>
+            <h3 id="puntuacion">0</h3>
         </div>
     </header>
     <main>
+        <img id="loader" class="ocultar" src="assets/oval.svg" alt="Loading...">
         <div class="contenedor-botones">
             <div id="piedra"></div>
             <div id="papel"></div>
@@ -30,4 +34,5 @@
         <small>Developed by Maximiliano Lujan, challenged by FrontendMentor, all rights reserved &#169</small>
     </footer>
 </body>
+<script src="index.js" type="module"></script>
 </html>

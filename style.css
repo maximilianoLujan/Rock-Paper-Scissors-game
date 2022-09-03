@@ -38,11 +38,13 @@ h2{
 
 #puntuacion{
     margin: 0;
+    font-size: xx-large;
 }
 
 main{
     width: 100%;
     height: 75vh;
+    position: relative;
 }
 
 .contenedor-botones{
@@ -55,6 +57,7 @@ main{
     position: relative;
 
 }
+
 .contenedor-botones div{
     width: 40%;
     height: 10rem;
@@ -63,17 +66,20 @@ main{
     position: absolute;
     background-color: aliceblue;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #piedra{
     background-image: url("assets/icon-rock.svg");
     border: 10px hsl(349, 71%, 52%) solid;
 }
+
 #papel{
     right: 0;
     border: 10px hsl(230, 89%, 62%) solid;
     background-image: url("assets/icon-paper.svg");
 }
+
 #tijera{
     bottom: 0;
     left: 28%;
@@ -87,6 +93,7 @@ section{
     display: flex;
     justify-content: flex-end;
 }
+
 #boton-reglas{
     margin-right: 1rem;
     padding: .4rem 1.3rem;
@@ -95,9 +102,60 @@ section{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    z-index: 999;
 }
+
 footer{
     width: 100%;
     color: white;
+    text-align: center;
+}
+
+.contenedor-rules{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5,5,5, 0.8);
+    position:absolute;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+#rules{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.presentar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#loader{
+    position: absolute;
+    width: 30%;
+    left: 34%;
+}
+.resultado{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: whitesmoke;
+    height: 80%;
+}
+.resultado h3{
     text-align: center;
 }
