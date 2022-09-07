@@ -137,13 +137,6 @@ footer{
     opacity: 1;
     visibility: visible;
 }
-
-.ocultar{
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-}
-
 #loader{
     position: absolute;
     width: 30%;
@@ -173,4 +166,10 @@ footer{
 }
 .resultado h3{
     text-align: center;
+}
+
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }

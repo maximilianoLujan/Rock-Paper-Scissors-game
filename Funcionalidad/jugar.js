@@ -38,7 +38,7 @@ function comprobarRes(elec,elecMaquina){
                     </div>
                     <div>
                         <h3>Draw</h3>
-                        <button>Play Again</button>
+                        <button class="jugarN">Play Again</button>
                     </div>
                     <div>
                         <h3>The house Picked</h3>
@@ -62,7 +62,7 @@ function comprobarRes(elec,elecMaquina){
                     </div>
                     <div>
                         <h3>You Win</h3>
-                        <button>Play Again</button>
+                        <button class="jugarN">Play Again</button>
                     </div>
                     <div>
                         <h3>The house Picked</h3>
@@ -86,7 +86,7 @@ function comprobarRes(elec,elecMaquina){
                     </div>
                     <div>
                         <h3>You Lose</h3>
-                        <button>Play Again</button>
+                        <button class="jugarN">Play Again</button>
                     </div>
                     <div>
                         <h3>The house Picked</h3>
@@ -99,26 +99,17 @@ function comprobarRes(elec,elecMaquina){
         }
     }, 1000);
 }
-
 function actualizarScore(res){
     const score = d.getElementById("puntuacion");
-    let ls = localStorage
-    if (!ls.getItem("res")){
-        ls.setItem("res",res)
-    } else {
-        ls.setItem("res",res)
-        if (ls.getItem("res") == "gano"){
-            const puntActual = score.textContent,
-             nuevaPuntuacion = (parseInt(puntActual) + 1);
-            score.textContent = nuevaPuntuacion.toString();
-        }
-        if (ls.getItem("res") == "perdio"){
-            score.textContent = "0";
-        }
-
+    let ls = localStorage;
+    if (res == "gano"){
+        ls.setItem("res",parseInt(ls.getItem("res")) + 1);
+        score.textContent = parseInt(ls.getItem("res"))
+    } else if (res == "perdio") {
+        ls.setItem("res",0);
+        score.textContent = parseInt(ls.getItem("res"))
     }
 
 
-
-    console.log(ls)
+    console.log(typeof(ls.getItem("res")))
 }
