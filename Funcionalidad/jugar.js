@@ -81,7 +81,7 @@ function comprobarRes(elec,elecMaquina){
             `
                 <div class="resultado">
                     <div>
-                        <h3>You Picked</h3>
+                        <h5>You Picked</h5>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
                     <div>
@@ -89,7 +89,7 @@ function comprobarRes(elec,elecMaquina){
                         <button class="jugarN">Play Again</button>
                     </div>
                     <div>
-                        <h3>The house Picked</h3>
+                        <h5>The house Picked</h5>
                         <div class="resultado-targeta" id="${elecMaquina}"></div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ function comprobarRes(elec,elecMaquina){
             $div.innerHTML = html;
             d.querySelector("main").insertAdjacentElement("afterbegin",$div)
         }
-    }, 1000);
+    }, 200);
 }
 function actualizarScore(res){
     const score = d.getElementById("puntuacion");
