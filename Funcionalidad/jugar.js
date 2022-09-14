@@ -28,19 +28,18 @@ function comprobarRes(elec,elecMaquina){
         d.getElementById("loader").classList.toggle("ocultar");
         if (elec === elecMaquina){
             const $div = d.createElement("div");
-            $div.classList.add("resultado");
             let html = 
             `
                 <div class="resultado">
-                    <div class="flex-result">
+                    <div class="flex-result eleccion">
                         <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result jugar-nuevamente">
                         <h3 class="texto-grande">Draw</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result eleccion2">
                         <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
@@ -52,19 +51,18 @@ function comprobarRes(elec,elecMaquina){
         if (((elec =="tijera")&&(elecMaquina=="papel"))||((elec =="papel")&&(elecMaquina=="piedra"))||((elec =="piedra")&&(elecMaquina=="tijera"))){
             actualizarScore("gano");
             const $div = d.createElement("div");
-            $div.classList.add("resultado");
             let html = 
             `
                 <div class="resultado">
-                    <div class="flex-result">
+                    <div class="flex-result eleccion">
                         <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result jugar-nuevamente">
                         <h3 class="texto-grande">You Win</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result eleccion2">
                         <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elecMaquina}"></div>
                     </div>
@@ -76,19 +74,18 @@ function comprobarRes(elec,elecMaquina){
         if (((elec =="tijera")&&(elecMaquina=="piedra"))||((elec =="papel")&&(elecMaquina=="tijera"))||((elec =="piedra")&&(elecMaquina=="papel"))){
             actualizarScore("perdio");                                                        
             const $div = d.createElement("div");
-            $div.classList.add("resultado");
             let html = 
             `
                 <div class="resultado">
-                    <div class="flex-result">
+                    <div class="flex-result eleccion">
                         <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result jugar-nuevamente">
                         <h3 class="texto-grande">You Lose</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div class="flex-result">
+                    <div class="flex-result eleccion2">
                         <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elecMaquina}"></div>
                     </div>
