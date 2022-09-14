@@ -32,15 +32,15 @@ function comprobarRes(elec,elecMaquina){
             let html = 
             `
                 <div class="resultado">
-                    <div>
+                    <div class="flex-result">
                         <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div>
-                        <h3>Draw</h3>
+                    <div class="flex-result">
+                        <h3 class="texto-grande">Draw</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div>
+                    <div class="flex-result">
                         <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
@@ -56,15 +56,15 @@ function comprobarRes(elec,elecMaquina){
             let html = 
             `
                 <div class="resultado">
-                    <div>
+                    <div class="flex-result">
                         <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div>
-                        <h3>You Win</h3>
+                    <div class="flex-result">
+                        <h3 class="texto-grande">You Win</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div>
+                    <div class="flex-result">
                         <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elecMaquina}"></div>
                     </div>
@@ -80,16 +80,16 @@ function comprobarRes(elec,elecMaquina){
             let html = 
             `
                 <div class="resultado">
-                    <div>
-                        <h5>You Picked</h5>
+                    <div class="flex-result">
+                        <h3>You Picked</h3>
                         <div class="resultado-targeta" id="${elec}"></div>
                     </div>
-                    <div>
-                        <h3>You Lose</h3>
+                    <div class="flex-result">
+                        <h3 class="texto-grande">You Lose</h3>
                         <button class="jugarN">Play Again</button>
                     </div>
-                    <div>
-                        <h5>The house Picked</h5>
+                    <div class="flex-result">
+                        <h3>The house Picked</h3>
                         <div class="resultado-targeta" id="${elecMaquina}"></div>
                     </div>
                 </div>
