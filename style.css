@@ -79,18 +79,24 @@ main{
 }
 
 #piedra{
+    width: 150px;
+    height: 150px;
     left: -50%;
     background-image: url("assets/icon-rock.svg");
     border: 10px hsl(349, 71%, 52%) solid;
 }
 
 #papel{
+    width: 150px;
+    height: 150px;
     right: -50%;
     border: 10px hsl(230, 89%, 62%) solid;
     background-image: url("assets/icon-paper.svg");
 }
 
 #tijera{
+    width: 150px;
+    height: 150px;
     bottom: 0;
     left: 18%;
     border: 10px hsl(39, 89%, 49%) solid;
@@ -101,7 +107,8 @@ section{
     width: 100%;
     height: max-content;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 5rem;
 }
 
 #boton-reglas{
@@ -124,14 +131,15 @@ footer{
 
 .contenedor-rules{
     background-color: white;
+    top: 5rem;
     position:absolute;
     margin: auto;
-    width: 50%;
+    width: 80%;
     height: max-content;
     z-index: 998;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     opacity: 0;
     visibility: hidden;
     transform: translateY(100vh);
@@ -166,7 +174,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     color: whitesmoke;
-    height: 80%;
+    height: 25rem;
 }
 .resultado-targeta{
     width: 200px;
